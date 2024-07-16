@@ -9,6 +9,7 @@ class ConfigReader {
 
 class Controller {
     private string $locale;
+    
     public function __construct($locale = "en")
     {
         $this->locale = $locale;
