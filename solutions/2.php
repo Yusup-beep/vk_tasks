@@ -20,6 +20,7 @@ abstract class Animal {
             throw new Exception("Localization file not found for locale: " . $this->getLocale());
         }
     }
+    
     public function getName(): string
     {
         return $this->name;
@@ -51,6 +52,7 @@ abstract class Animal {
     {
         return $this->translations[$this->getSound()] ?? $this->getSound();
     }
+    
     abstract function getSound();
 }
 
